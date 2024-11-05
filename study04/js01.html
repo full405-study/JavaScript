@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 반복문
+        // 반복 조건이 참(true)인 경우 지정한 소스코드를 반복 실행하는 명령어
+        // for문, while문 2가지 형태가 존재함
+
+        // while
+        // 반복 조건이 참(true) 일 경우 코드 블럭 안의 내용을 반복 실행하는 명령어
+        // while 문에서 사용하는 초기화 변수를 while문 외부에서 선언하고 while문 내부에서 사용함
+        // while 문에서 탈출할 수 있는 조건을 while문에 지정해야 함
+        // 무한 반복이 발생할 수 있음
+        // 증감식의 위치에 따라서 출력되는 결과가 다르게 나올 수 있음
+        // 반복 조건의 결과가 처음부터 false면 while문의 반복 실행 소스코드를 한번도 실행하지 않음
+
+        // 사용법
+        // 초기화 변수 선언
+        // while (반복조건){
+        //  반복 실행할 소스코드
+        //  증감식
+        // }
+
+        console.log("나무꾼이 나무를 합니다.")
+        
+        var count = 0;
+
+        while (true) {
+            count++;
+            console.log("도끼로 나무를" + count + "번 찍습니다.");
+        
+        
+            if (count >= 10) {
+                console.log("나무가 넘어갑니다.")
+                break;
+            }
+        }            
+
+
+        var count = 0; // 초기화 변수
+
+        // // while문, 조건식
+        while (count < 10){
+            // 반복 실행할 소스코드
+            console.log("변수 count의 값은 : " + count)
+            // 증감식
+            count++;
+        }
+
+        var count = 10;
+
+        while (count > 0){
+            console.log("변수 count의 값은 : " + count);
+            count--;
+        }
+
+        // 주의 사항
+        // 1. while문은 탈출 조건을 지정하지 않거나, 반복된 조건을 사용 시 무한 반복에 빠질 수 있음
+        // 2. 증감식을 생략 시 무한 반복에 빠질 수 있음
+        // 3. 증감식의 위치에 따라 출력되는 결과가 다르게 나올 수 있음
+
+        var count = 0;
+
+        while (count == 0) {
+            console.log("변수 count 의 값 : " + count);
+            count++;
+        }
+
+        // 문제 1) 1 ~ 10까지의 총합을 구하는 프로그램을 while문을 사용하여 작성하세요
+
+        var totla = 0;
+        var count = 1;
+
+        while (count < 11){
+            total = totla +count;
+            count++;
+        }
+
+        // 문제 2) 사용자 입력을 통해서 2 ~ 9까지의 숫자를 하나 입력받고 입력받은 숫자에 맞는 구구단을 출력하세요.
+        // ps. 입력받은 숫자는 Number()로 숫자 타입으로 변환해서 사용해야 함
+
+        
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
